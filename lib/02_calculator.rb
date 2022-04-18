@@ -21,12 +21,8 @@ def subtract(nb1, nb2)
     return (a ** b)
   end
    
-  def factorial(x)
-    if x <= 1  
-      x = 1
-    else
-      x = factorial(x-1)
-    end
-    return x
+  def factorial(n)
+    return 1 if n <= 1
+    return (1..n).inject(:*)
   end
 
